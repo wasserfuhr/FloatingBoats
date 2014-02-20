@@ -1,4 +1,4 @@
 FloatingBoats
 =============
 
-See http://sl4.eu/wiki/FloatingBoats
+See http://mindbroker.de/FloatingBoats
