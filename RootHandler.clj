@@ -3,72 +3,13 @@
    log (java.util.logging.Logger/getLogger "mind.RootHandler")
    ;each known BigTableNomic WebApp:
    apps {
-    :bahnchefspiel
-     {:appStats true
-      :name "BahnChefSpiel"}
-    :bigtablenomic
-     {:name "BigTableNomic"
-      :appStats true
-      :analyticsProfileId 37874819
-      :analyticsToken 38284150
-      :analyticsPropertyId "UA-5959916-3"}
-    :corisotto
-     {:name "CoRisotto"}
-    :dresdenbot
-     {:appStats true
-      :name "DresdenBot"}
-    :elias-morgenstern
-     {:name "EliasMorgenstern"}
-    :etherbank
-     {:name "EtherBank"}
-    :flavourcity
-     {:name "FlavourCity"
-      :appStats true
-      :analyticsProfileId 61681360
-      :analyticsToken 60310363
-      :analyticsPropertyId "UA-5959916-10"}
-    :heidi-morgenstern
-     {:name "HeidiMorgenstern"
-      :appStats true
-      :analyticsProfileId 49416747
-      :analyticsPropertyId "UA-5959916-8"}
-    :hotelkronentor
-     {:name "HotelKronentor"}
-    :myviaf
-     {:name "MyViaf"}
     :new-egypt
      {:name "NewEgypt"
       :appStats true
       :analyticsProfileId 42011666
       :analyticsToken 42107041
       :analyticsPropertyId "UA-5959916-6"
-      :highReplication true}
-    :noobootstrap
-     {:name "NooBootStrap"}
-    :noopolis 
-     {:name "NooPolis"
-      :appStats true
-      :analyticsProfileId 42225147
-      :analyticsToken 42300499
-      :analyticsPropertyId "UA-5959916-7"}
-    :pieschenai
-     {:name "PieschenAi"}
-    :pieschenartgroup
-     {:name "PieschenArtGroup"}
-    :pieschenbank
-     {:name "PieschenBank"
-      :appStats true
-      :analyticsProfileId 37873294
-      :analyticsToken 38285507
-      :analyticsPropertyId "UA-5959916-4"}
-    :singularacademy
-     {:name "SingularAcademy"
-      :appStats true
-      :analyticsProfileId 50096408
-      :analyticsToken 49573415
-      :analyticsPropertyId "UA-5959916-9"}
-    :singulartheater
-     {:name "SingularTheater"}}
+      :highReplication true}}
    appId
     ;special case: a "HighReplication" WebApp appId starts with "s~"
     ;which we have to remove: 
