@@ -1,14 +1,11 @@
-(fn [request response]
- (let [
-   log (java.util.logging.Logger/getLogger "mind.RootHandler")
+(fn[request response]
+ (let[
+   log(java.util.logging.Logger/getLogger"mind.RootHandler")
    ;each known BigTableNomic WebApp:
    apps {
     :new-egypt
      {:name "NewEgypt"
       :appStats true
-      :analyticsProfileId 42011666
-      :analyticsToken 42107041
-      :analyticsPropertyId "UA-5959916-6"
       :highReplication true}}
    appId
     ;special case: a "HighReplication" WebApp appId starts with "s~"
@@ -52,7 +49,7 @@
      "http[s]?://(^[ \n\r]*)") ; ToDo
    linkify
     (fn [wikiString]
-     (let [
+     (let[
        m (.matcher urlP wikiString)]
       (if (.find m)
        (let [
