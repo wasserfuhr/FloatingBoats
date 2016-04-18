@@ -1,7 +1,4 @@
-(fn [request response]
- (do
-  (.setCharacterEncoding response "UTF-8")
-  (let [
+(fn [request response] (let [
    AppVars (.getAttribute request "vars")
    appId (:appId AppVars)
    tags (.getEnumConstants difflib.DiffRow$Tag)
@@ -30,7 +27,7 @@
  (hiccup.core/html "<!DOCTYPE html>"
   [:html
    [:head
-    [:title appId " » WebEditor » diff"]
+    [:title appId " Â» WebEditor Â» diff"]
     [:meta {:http-equiv "Content-Type" :content "text/html;charset=utf-8"}]
     [:link {:rel "stylesheet" :type "text/css" :href "/css"}]
     [:style {:type "text/css"}
@@ -39,8 +36,8 @@
     [:script {:type "text/javascript" :src "https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"}]]
    [:body
     [:div
-     [:h1 [:a {:href "/"} appId] " » "
-          [:a {:href "/edit"} "WebEditor"] " » diff"]
+     [:h1 [:a {:href "/"} appId] " Â» "
+          [:a {:href "/edit"} "WebEditor"] " Â» diff"]
      [:table
       [:tr 
        [:th "#"] [:th "+/-"]
@@ -60,4 +57,4 @@
        (rec (rest x)
           (+ cl 1) 
           (+ cr (if (= DELETE (.getTag (first x))) 0 1))))))
-   (.generateDiffRows generator originalV revisedV) 1 1)]]]]))))
+   (.generateDiffRows generator originalV revisedV) 1 1)]]]])))
