@@ -36,11 +36,8 @@
            pageExists
             (.getResourceAsStream(RT/baseLoader)
              (str "mind/" matchS ".txt"))]
-          (list
-           (subs wikiString lastPos(.start m))
-           [:a {
-             :href
-              (str"/wiki/"(linkify matchS))
+          (list(subs wikiString lastPos(.start m))
+           [:a{:href(str"/wiki/"(linkify matchS))
              :class(if pageExists"blue""red")}             
             (linkify matchS)]
            (recurW wikiString m(.end m))))
