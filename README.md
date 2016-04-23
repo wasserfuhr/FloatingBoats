@@ -1,4 +1,4 @@
 FloatingBoats
 =============
 
-See http://mindbroker.de/FloatingBoats
+See https://dresdenlabs.appspot.com/FloatingBoats
