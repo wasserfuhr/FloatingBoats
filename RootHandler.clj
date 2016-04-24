@@ -155,8 +155,7 @@
      toAddr
       (javax.mail.internet.InternetAddress.
        to"RainerWasserfuhr")
-     msg
-      (doto(javax.mail.internet.MimeMessage. session)
+     msg(doto(javax.mail.internet.MimeMessage. session)
        (.setFrom fromAddr)
        (.addRecipient
           javax.mail.Message$RecipientType/TO toAddr)
