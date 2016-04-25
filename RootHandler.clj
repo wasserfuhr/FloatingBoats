@@ -201,4 +201,4 @@
     :memCache memCache
     :userService userService
     :wikify wikify})
- (if(= resource"eval")(evalId id)(evalResource resource)))))
+ (if(="eval"resource)(evalId id)(evalResource resource)))))
