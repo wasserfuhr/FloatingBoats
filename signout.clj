@@ -1,4 +1,3 @@
-(fn [request response]
- (do
-  (.invalidate (.getSession request))
-  (.sendRedirect response "/")))
+(fn[rq rs](do
+ (.invalidate(.getSession rq))
+ (.sendRedirect rs"/")))
