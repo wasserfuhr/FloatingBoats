@@ -1,7 +1,5 @@
-(fn [request response]
- (do
-  (.setCharacterEncoding response "UTF-8")
-  (let [
+(fn[request response]
+ (let [
     AppVars (.getAttribute request "vars")
     service (:datastoreService AppVars)
     apiKey "7fa86b8e46a5894fa24b58da34f413723531c0ee"
@@ -43,4 +41,4 @@
 Identifier: " (:identifier (:profile json)))
        msgBody)
     (.put service e)
-    (.sendRedirect response (str (if go go "/") "?signedin")))))))
+    (.sendRedirect response (str (if go go "/") "?signedin"))))))
