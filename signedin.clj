@@ -1,7 +1,7 @@
 (fn[request response]
- (let [
-    AppVars (.getAttribute request "vars")
-    service (:datastoreService AppVars)
+ (let[
+    AppVars(.getAttribute request "vars")
+    service(:datastoreService AppVars)
     apiKey "7fa86b8e46a5894fa24b58da34f413723531c0ee"
     token (.getParameter request "token")
     go (.getParameter request "go")
