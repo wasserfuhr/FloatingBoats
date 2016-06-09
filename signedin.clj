@@ -2,9 +2,9 @@
  (let[
     AppVars(.getAttribute request "vars")
     service(:datastoreService AppVars)
-    apiKey "7fa86b8e46a5894fa24b58da34f413723531c0ee"
-    token (.getParameter request "token")
-    go (.getParameter request "go")
+    apiKey"7fa86b8e46a5894fa24b58da34f413723531c0ee"
+    token(.getParameter request "token")
+    go(.getParameter request "go")
     ;http://developers.janrain.com/documentation/api/auth_info/
     urlS (str
      "https://rpxnow.com/api/v2/auth_info?"
