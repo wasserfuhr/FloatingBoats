@@ -18,8 +18,8 @@
                 (if (nil? line) ""
                  (str line (a b)))))
              buf))))
-    json (clojure.contrib.json/read-json rpxResponse)
-    sessId (.getId (.getSession request))
+    json(clojure.contrib.json/read-json rpxResponse)
+    sessId(.getId (.getSession request))
     sessText (com.google.appengine.api.datastore.Text. rpxResponse)
     e
      (doto
