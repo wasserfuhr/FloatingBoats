@@ -10,7 +10,7 @@
      "https://rpxnow.com/api/v2/auth_info?"
      "apiKey=" apiKey
      "&token=" token)
-    rpxResponse (let[url(java.net.URL. urlS)]
+    rpxResponse(let[url(java.net.URL. urlS)]
         (with-open[stream (. url (openStream))]
           (let [buf (java.io.BufferedReader. (java.io.InputStreamReader. stream))]
             ((defn a [b]
