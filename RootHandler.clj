@@ -104,8 +104,8 @@
   RPXNOW.language_preference='en';"]
  search
   [:span
-   [:input {:style "margin-left: 64px" :name "q"}]
-   [:input {:type "submit" :value "MindSearch"}]]
+   [:input{:style "margin-left: 64px" :name "q"}]
+   [:input{:type "submit" :value "MindSearch"}]]
  auth(fn[]
      (let[
        sessId(.getId (.getSession rq))
