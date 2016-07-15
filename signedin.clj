@@ -12,7 +12,7 @@
      "&token=" token)
     rpxResponse(let[url(java.net.URL. urlS)]
         (with-open[stream (. url (openStream))]
-          (let [buf (java.io.BufferedReader. (java.io.InputStreamReader. stream))]
+          (let [buf (java.io.BufferedReader.(java.io.InputStreamReader. stream))]
             ((defn a[b]
               (let[line(.readLine b)]
                 (if (nil? line) ""
