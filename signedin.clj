@@ -29,7 +29,7 @@
       ;needed for SignIn queries:
       (.setProperty "identifier" (:identifier (:profile json)))
       ;needed for stats queries:
-      (.setProperty "providerName" (:providerName (:profile json))))
+      (.setProperty "providerName"(:providerName (:profile json))))
      user (:displayName (:profile json))
      msgBody
        (str "New " (:appName AppVars) " SignIn by " user
