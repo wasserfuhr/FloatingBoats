@@ -41,4 +41,4 @@
 Identifier: " (:identifier (:profile json)))
        msgBody)
     (.put service e)
-    (.sendRedirect response (str (if go go "/") "?signedin"))))))
+    (.sendRedirect response(str(if go go "/") "?signedin"))))))
